@@ -4,6 +4,8 @@ import Navib from './navbar';
 import About from './about';
 import axios from 'axios';
 
+/*Sergio Velasquez: Me parece que es bueno que la clase principal sea clara. Y que parte de la complejidad del proyecto se
+translade a otras clses. En mi proyecto está clase es bastante compleja y eso dificulta un poco entener como funciona*/
 
 class App extends Component {
 
