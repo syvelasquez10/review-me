@@ -9,6 +9,7 @@ class Proyectos extends Component{
     this.props.proyectos.map((proyecto)=>{
       arr.push(<div className="col-md-4"><Proyecto key={proyecto.id} proyecto={proyecto}/></div>);
     })
+    /*Sergio Velasquez: Para que sirve chunck()? busque pero no encontre algo claro*/
     var chu = chunk(arr,3);
     return chu;
   }
@@ -23,7 +24,8 @@ class Proyectos extends Component{
             </h1>
             <hr></hr>
           </div>
-
+          /*Sergio Velasquez: No entiendo muy bien que se está haciendo aquí, sería bueno agregar algunos comentarios
+          explicando que se hace*/
           {this.organize().map((grupo,index)=>{
             console.log(grupo);
               return(
